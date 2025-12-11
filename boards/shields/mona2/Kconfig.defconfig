@@ -1,40 +1,52 @@
 if SHIELD_MONA2_R
 
 config ZMK_KEYBOARD_NAME
+    string
     default "mona2"
 
 config ZMK_BLE
+    bool
     default y
 
 config ZMK_SPLIT_ROLE_CENTRAL
+    bool
     default y
 
 config INPUT
+    bool
     default y
 
 config ZMK_POINTING
+    bool
     default y
 
 config SPI
+    bool
     default y
 
 config PMW3610
+    bool
     default y
 
 endif
 
+
 if SHIELD_MONA2_R || SHIELD_MONA2_L
 
 config NFCT_PINS_AS_GPIOS
+    bool
     default y
 
 config ZMK_SPLIT
+    bool
     default y
 
 config RGBLED_WIDGET_BATTERY_LEVEL_HIGH
+    int
     default 30
 
 config RGBLED_WIDGET_BATTERY_LEVEL_CRITICAL
+    int
     default 10
 
 endif
