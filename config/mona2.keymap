@@ -107,7 +107,7 @@
 &mt ESCAPE Q      &kp W           &kp E             &kp R           &kp T                                              &kp Y             &kp U            &kp I              &kp O            &kp P
 &mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 10 EQUAL     &mt LCTRL H       &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON SQT
 &mt LEFT_SHIFT Z  &kp X           &kp C             &kp V           &kp B             &to 2           &to 1            &kp N             &kp M            &kp COMMA          &kp DOT          &kp SLASH
-&kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT      &lt 8 MINUS     &lt 6 LANGUAGE_2  &lt 11 SPACE    &lt 3 BACKSPACE  &lt 5 LANGUAGE_1                                                       &kp RCTRL
+&kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT      &lt 8 MINUS     &lt 6 LANGUAGE_2  &lt 11 SPACE    &lt 3 BACKSPACE  &lt 5 LANGUAGE_1                                                       &mt RCTRL CAPS
             >;
 
             sensor-bindings = <&scroll_up_down>;
