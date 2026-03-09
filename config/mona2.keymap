@@ -39,7 +39,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
 
@@ -130,23 +130,23 @@
     keymap {
         compatible = "zmk,keymap";
 
-        mac {
+        windows {
             bindings = <
-&mt CAPSLOCK Q    &kp W           &kp E             &kp R           &kp T                                              &kp Y             &kp U            &kp I              &kp O            &kp P
-&mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 8 EQUAL      &mt LCTRL H       &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON SQT
-&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V           &kp B             &to 2           &to 1            &kp N             &kp M            &kp COMMA          &kp DOT          &kp SLASH
-&kp LEFT_WIN      &kp LEFT_ALT    &kp LCTRL         &lt 6 MINUS     &lt 4 LANGUAGE_2  &lt 11 SPACE    &lt 9 BACKSPACE  &lt 3 LANGUAGE_1                                                       &kp RIGHT_WIN
+&mt ESCAPE Q      &kp W           &kp E             &kp R           &kp T                                               &kp Y             &kp U            &kp I              &kp O            &kp P
+&mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 8 EQUAL       &mt LCTRL H       &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON SQT
+&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V           &kp B             &to 3           &to 2             &kp N             &kp M            &kp COMMA          &kp DOT          &kp SLASH
+&kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT      &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 11 SPACE    &lt 10 BACKSPACE  &lt 3 LANGUAGE_1                                                       &kp RCTRL
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        windows {
+        mac {
             bindings = <
-&mt ESCAPE Q      &kp W           &kp E             &kp R           &kp T                                               &kp Y             &kp U            &kp I              &kp O            &kp P
-&mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 8 EQUAL       &mt LCTRL H       &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON SQT
-&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V           &kp B             &to 2           &to 0             &kp N             &kp M            &kp COMMA          &kp DOT          &kp SLASH
-&kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT      &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 11 SPACE    &lt 10 BACKSPACE  &lt 3 LANGUAGE_1                                                       &kp RCTRL
+&mt CAPSLOCK Q    &kp W           &kp E             &kp R           &kp T                                              &kp Y             &kp U            &kp I              &kp O            &kp P
+&mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 8 EQUAL      &mt LCTRL H       &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON SQT
+&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V           &kp B             &to 3           &to 0            &kp N             &kp M            &kp COMMA          &kp DOT          &kp SLASH
+&kp LEFT_WIN      &kp LEFT_ALT    &kp LCTRL         &lt 6 MINUS     &lt 4 LANGUAGE_2  &lt 11 SPACE    &lt 9 BACKSPACE  &lt 3 LANGUAGE_1                                                       &kp RIGHT_WIN
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -156,7 +156,7 @@
             bindings = <
 &mt CAPS Q        &kp L           &kp E             &mt PERIOD COMMA  &mt SEMICOLON SQT                                   &kp F             &kp R            &kp W              &kp Y            &kp P
 &mt TAB A         &mt LEFT_ALT I  &mt LEFT_SHIFT U  &mt LEFT_WIN O    &mt LCTRL MINUS                    &lt 8 EQUAL      &mt LCTRL K       &mt RIGHT_WIN T  &mt RIGHT_SHIFT N  &mt RIGHT_ALT S  &kp H
-&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V             &kp SLASH          &to 0           &to 0            &kp G             &kp D            &kp M              &kp J            &kp B
+&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V             &kp SLASH          &to 2           &to 2            &kp G             &kp D            &kp M              &kp J            &kp B
 &kp LEFT_WIN      &kp LEFT_ALT    &kp LCTRL         &lt 6 MINUS       &lt 4 LANGUAGE_2   &lt 11 SPACE    &lt 9 BACKSPACE  &lt 3 LANGUAGE_1                                                       &kp RIGHT_WIN
             >;
 
