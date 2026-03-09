@@ -237,7 +237,7 @@
 &trans             &trans                &trans                &trans                    &trans             &trans    &trans  &trans                                                         &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LA(MINUS) LA(EQUAL)>;
+            sensor-bindings = <&inc_dec_kp F14 F15>;
         };
 
         win_MOUSE {
