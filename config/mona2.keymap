@@ -25,7 +25,7 @@
         compatible = "zmk,combos";
 
         layer4_ESC {
-            bindings = <&lt 4 ESC>;
+            bindings = <&lt 5 ESC>;
             key-positions = <39 38>;
         };
 
@@ -39,7 +39,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
 
@@ -130,23 +130,23 @@
     keymap {
         compatible = "zmk,keymap";
 
-        windows {
+        mac {
             bindings = <
-&mt ESCAPE Q      &kp W           &kp E             &kp R           &kp T                                              &kp Y             &kp U            &kp I              &kp O            &kp P
+&mt CAPSLOCK Q    &kp W           &kp E             &kp R           &kp T                                              &kp Y             &kp U            &kp I              &kp O            &kp P
 &mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 8 EQUAL      &mt LCTRL H       &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON SQT
 &mt LEFT_SHIFT Z  &kp X           &kp C             &kp V           &kp B             &to 2           &to 1            &kp N             &kp M            &kp COMMA          &kp DOT          &kp SLASH
-&kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT      &lt 6 MINUS     &lt 4 LANGUAGE_2  &lt 11 SPACE    &lt 9 BACKSPACE  &lt 3 LANGUAGE_1                                                       &kp RCTRL
+&kp LEFT_WIN      &kp LEFT_ALT    &kp LCTRL         &lt 6 MINUS     &lt 4 LANGUAGE_2  &lt 11 SPACE    &lt 9 BACKSPACE  &lt 3 LANGUAGE_1                                                       &kp RIGHT_WIN
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        mac {
+        windows {
             bindings = <
-&mt CAPSLOCK Q    &kp W           &kp E             &kp R           &kp T                                               &kp Y             &kp U            &kp I              &kp O            &kp P
+&mt ESCAPE Q      &kp W           &kp E             &kp R           &kp T                                               &kp Y             &kp U            &kp I              &kp O            &kp P
 &mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 8 EQUAL       &mt LCTRL H       &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON SQT
 &mt LEFT_SHIFT Z  &kp X           &kp C             &kp V           &kp B             &to 2           &to 0             &kp N             &kp M            &kp COMMA          &kp DOT          &kp SLASH
-&kp LEFT_WIN      &kp LEFT_ALT    &kp LCTRL         &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 11 SPACE    &lt 10 BACKSPACE  &lt 3 LANGUAGE_1                                                       &kp RIGHT_WIN
+&kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT      &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 11 SPACE    &lt 10 BACKSPACE  &lt 3 LANGUAGE_1                                                       &kp RCTRL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -154,10 +154,10 @@
 
         mac_onishi {
             bindings = <
-&mt CAPS Q        &kp L           &kp E             &mt PERIOD COMMA  &mt SEMICOLON SQT                                    &kp F             &kp R            &kp W              &kp Y            &kp P
-&mt TAB A         &mt LEFT_ALT I  &mt LEFT_SHIFT U  &mt LEFT_WIN O    &mt LCTRL MINUS                    &lt 8 EQUAL       &mt LCTRL K       &mt RIGHT_WIN T  &mt RIGHT_SHIFT N  &mt RIGHT_ALT S  &kp H
-&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V             &kp SLASH          &to 1           &to 1             &kp G             &kp D            &kp M              &kp J            &kp B
-&kp LEFT_WIN      &kp LEFT_ALT    &kp LCTRL         &lt 7 MINUS       &lt 5 LANGUAGE_2   &lt 11 SPACE    &lt 10 BACKSPACE  &lt 3 LANGUAGE_1                                                       &kp RIGHT_WIN
+&mt CAPS Q        &kp L           &kp E             &mt PERIOD COMMA  &mt SEMICOLON SQT                                   &kp F             &kp R            &kp W              &kp Y            &kp P
+&mt TAB A         &mt LEFT_ALT I  &mt LEFT_SHIFT U  &mt LEFT_WIN O    &mt LCTRL MINUS                    &lt 8 EQUAL      &mt LCTRL K       &mt RIGHT_WIN T  &mt RIGHT_SHIFT N  &mt RIGHT_ALT S  &kp H
+&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V             &kp SLASH          &to 0           &to 0            &kp G             &kp D            &kp M              &kp J            &kp B
+&kp LEFT_WIN      &kp LEFT_ALT    &kp LCTRL         &lt 6 MINUS       &lt 4 LANGUAGE_2   &lt 11 SPACE    &lt 9 BACKSPACE  &lt 3 LANGUAGE_1                                                       &kp RIGHT_WIN
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -174,17 +174,6 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
-        windows_kigou {
-            bindings = <
-&mt ESCAPE EXCLAMATION  &kp AT_SIGN         &kp HASH                  &kp DOLLAR          &kp PERCENT                              &kp ESCAPE     &kp HOME        &kp UP_ARROW  &kp END        &kp PRINTSCREEN
-&kp TAB                 &mt LEFT_ALT CARET  &mt LEFT_SHIFT AMPERSAND  &mt LCTRL ASTERISK  &mkp LCLK                    &trans      &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp F2
-&kp LSHIFT              &kp GRAVE           &kp SLASH                 &kp BACKSLASH       &kp SEMICOLON  &kp C_MUTE    &trans      &kp DELETE     &kp PAGE_UP     &kp INS       &kp PAGE_DOWN  &kp RIGHT_ALT
-&trans                  &trans              &trans                    &trans              &trans         &trans        &kp RETURN  &kp RIGHT_ALT                                               &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
-        };
-
         mac_kigou {
             bindings = <
 &mt ESCAPE EXCLAMATION  &kp AT_SIGN         &kp HASH                  &kp DOLLAR          &kp PERCENT                              &kp ESCAPE     &kp LG(LEFT)      &kp UP_ARROW  &kp LG(RIGHT)  &kp LC(LS(LG(NUMBER_4)))
@@ -196,15 +185,15 @@
             sensor-bindings = <&inc_dec_kp F14 F15>;
         };
 
-        win_left {
+        windows_kigou {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &none                                &none   &none  &none  &none  &none
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END               &trans         &none   &none  &none  &none  &none
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &none           &kp LG(LS(RIGHT_ARROW))  &kp C_MUTE  &trans    &trans         &none   &none  &none  &none  &none
-&trans          &trans                  &trans          &trans                   &trans      &trans    &kp BACKSPACE  &trans                       &trans
+&mt ESCAPE EXCLAMATION  &kp AT_SIGN         &kp HASH                  &kp DOLLAR          &kp PERCENT                              &kp ESCAPE     &kp HOME        &kp UP_ARROW  &kp END        &kp PRINTSCREEN
+&kp TAB                 &mt LEFT_ALT CARET  &mt LEFT_SHIFT AMPERSAND  &mt LCTRL ASTERISK  &mkp LCLK                    &trans      &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp F2
+&kp LSHIFT              &kp GRAVE           &kp SLASH                 &kp BACKSLASH       &kp SEMICOLON  &kp C_MUTE    &trans      &kp DELETE     &kp PAGE_UP     &kp INS       &kp PAGE_DOWN  &kp RIGHT_ALT
+&trans                  &trans              &trans                    &trans              &trans         &trans        &kp RETURN  &kp RIGHT_ALT                                               &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         mac_left {
@@ -213,6 +202,17 @@
 &trans  &kp LEFT_ARROW      &kp DOWN      &kp RIGHT      &trans                &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LG(UP_ARROW)    &trans        &kp LG(DOWN)   &kp C_MUTE  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans              &trans        &trans         &trans      &trans    &trans  &trans                          &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+        };
+
+        win_left {
+            bindings = <
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &none                                &none   &none  &none  &none  &none
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END               &trans         &none   &none  &none  &none  &none
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &none           &kp LG(LS(RIGHT_ARROW))  &kp C_MUTE  &trans    &trans         &none   &none  &none  &none  &none
+&trans          &trans                  &trans          &trans                   &trans      &trans    &kp BACKSPACE  &trans                       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -229,17 +229,6 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        win_MOUSE {
-            bindings = <
-&kp LG(DOWN)  &kp LG(UP_ARROW)  &kp LC(W)         &kp LC(T)          &kp LS(LC(T))                        &none   &kp LA(LEFT)     &none     &kp LA(RIGHT)  &none
-&kp LG(LEFT)  &kp LG(RIGHT)     &kp LG(LS(LEFT))  &kp LG(LS(RIGHT))  &none                        &trans  &none   &mkp MB1         &mkp MB3  &mkp MB2       &none
-&none         &none             &none             &none              &none          &kp C_MUTE    &trans  &none   &kp LC(LS(TAB))  &none     &kp LC(TAB)    &none
-&trans        &trans            &trans            &trans             &trans         &trans        &trans  &trans                                            &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP>;
-        };
-
         mac_Mouse {
             bindings = <
 &kp LG(LC(LA(M)))  &kp LG(LA(LC(LEFT)))  &kp LC(LG(UP_ARROW))  &kp LA(LC(LG(UP_ARROW)))  &kp LG(BACKSLASH)                    &trans  &kp LG(LEFT_BRACKET)  &trans    &kp LG(RIGHT_BRACKET)  &trans
@@ -249,6 +238,17 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LA(MINUS) LA(EQUAL)>;
+        };
+
+        win_MOUSE {
+            bindings = <
+&kp LG(DOWN)  &kp LG(UP_ARROW)  &kp LC(W)         &kp LC(T)          &kp LS(LC(T))                        &none   &kp LA(LEFT)     &none     &kp LA(RIGHT)  &none
+&kp LG(LEFT)  &kp LG(RIGHT)     &kp LG(LS(LEFT))  &kp LG(LS(RIGHT))  &none                        &trans  &none   &mkp MB1         &mkp MB3  &mkp MB2       &none
+&none         &none             &none             &none              &none          &kp C_MUTE    &trans  &none   &kp LC(LS(TAB))  &none     &kp LC(TAB)    &none
+&trans        &trans            &trans            &trans             &trans         &trans        &trans  &trans                                            &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP>;
         };
 
         SCROLL {
