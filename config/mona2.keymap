@@ -132,10 +132,10 @@
 
         default_layout {
             bindings = <
-&mt CAPSLOCK Q    &kp W           &kp E             &kp R           &kp T                                              &kp Y             &kp U            &kp I              &kp O            &kp P
-&mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 8 EQUAL      &mt LCTRL H       &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON SQT
-&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V           &kp B             &to 3           &to 1            &kp N             &kp M            &kp COMMA          &kp DOT          &kp SLASH
-&kp LEFT_WIN      &kp LEFT_ALT    &kp LCTRL         &lt 6 MINUS     &lt 4 LANGUAGE_2  &lt 11 SPACE    &lt 9 BACKSPACE  &lt 3 LANGUAGE_1                                                       &kp RIGHT_WIN
+&mt CAPSLOCK Q    &kp W           &kp E             &kp R           &kp T                                               &kp Y             &kp U            &kp I              &kp O            &kp P
+&mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 9 EQUAL       &mt LCTRL H       &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON SQT
+&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V           &kp B             &to 3           &to 1             &kp N             &kp M            &kp COMMA          &kp DOT          &kp SLASH
+&kp LEFT_WIN      &kp LEFT_ALT    &kp LCTRL         &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 12 SPACE    &lt 10 BACKSPACE  &lt 4 LANGUAGE_1                                                       &kp RIGHT_WIN
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -144,9 +144,9 @@
         windows {
             bindings = <
 &mt ESCAPE Q      &kp W           &kp E             &kp R           &kp T                                               &kp Y             &kp U            &kp I              &kp O            &kp P
-&mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 8 EQUAL       &mt LCTRL H       &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON SQT
-&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V           &kp B             &to 3           &to 2             &kp N             &kp M            &kp COMMA          &kp DOT          &kp SLASH
-&kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT      &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 11 SPACE    &lt 10 BACKSPACE  &lt 3 LANGUAGE_1                                                       &kp RCTRL
+&mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 9 EQUAL       &mt LCTRL H       &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON SQT
+&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V           &kp B             &to 2           &to 0             &kp N             &kp M            &kp COMMA          &kp DOT          &kp SLASH
+&kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT      &lt 8 MINUS     &lt 6 LANGUAGE_2  &lt 12 SPACE    &lt 11 BACKSPACE  &lt 4 LANGUAGE_1                                                       &kp RCTRL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -154,10 +154,10 @@
 
         windows_jp {
             bindings = <
-&mt ESCAPE Q      &kp W           &kp E             &kp R           &kp T                                               &kp Y             &kp U            &kp I              &kp O            &kp P
-&mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 8 EQUAL       &mt LCTRL H       &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON SQT
-&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V           &kp B             &to 3           &to 2             &kp N             &kp M            &kp COMMA          &kp DOT          &kp SLASH
-&kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT      &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 11 SPACE    &lt 10 BACKSPACE  &lt 3 LANGUAGE_1                                                       &kp RCTRL
+&mt ESCAPE Q      &kp W           &kp E             &kp R           &kp T                                               &kp Y              &kp U            &kp I              &kp O            &kp P
+&mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 9 EQUAL       &mt LCTRL H        &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON LS(N7)
+&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V           &kp B             &to 1           &to 2             &kp N              &kp M            &kp COMMA          &kp DOT          &kp SLASH
+&kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT      &lt 8 MINUS     &lt 6 LANGUAGE_2  &lt 12 SPACE    &lt 11 BACKSPACE  &lt 13 LANGUAGE_1                                                       &kp RCTRL
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -165,10 +165,10 @@
 
         mac_onishi {
             bindings = <
-&mt CAPS Q        &kp L           &kp E             &mt PERIOD COMMA  &mt SEMICOLON SQT                                   &kp F             &kp R            &kp W              &kp Y            &kp P
-&mt TAB A         &mt LEFT_ALT I  &mt LEFT_SHIFT U  &mt LEFT_WIN O    &mt LCTRL MINUS                    &lt 8 EQUAL      &mt LCTRL K       &mt RIGHT_WIN T  &mt RIGHT_SHIFT N  &mt RIGHT_ALT S  &kp H
-&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V             &kp SLASH          &to 2           &to 2            &kp G             &kp D            &kp M              &kp J            &kp B
-&kp LEFT_WIN      &kp LEFT_ALT    &kp LCTRL         &lt 6 MINUS       &lt 4 LANGUAGE_2   &lt 11 SPACE    &lt 9 BACKSPACE  &lt 3 LANGUAGE_1                                                       &kp RIGHT_WIN
+&mt CAPS Q        &kp L           &kp E             &mt PERIOD COMMA  &mt SEMICOLON SQT                                    &kp F             &kp R            &kp W              &kp Y            &kp P
+&mt TAB A         &mt LEFT_ALT I  &mt LEFT_SHIFT U  &mt LEFT_WIN O    &mt LCTRL MINUS                    &lt 9 EQUAL       &mt LCTRL K       &mt RIGHT_WIN T  &mt RIGHT_SHIFT N  &mt RIGHT_ALT S  &kp H
+&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V             &kp SLASH          &to 0           &to 1             &kp G             &kp D            &kp M              &kp J            &kp B
+&kp LEFT_WIN      &kp LEFT_ALT    &kp LCTRL         &lt 7 MINUS       &lt 5 LANGUAGE_2   &lt 12 SPACE    &lt 10 BACKSPACE  &lt 4 LANGUAGE_1                                                       &kp RIGHT_WIN
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -215,7 +215,7 @@
 &trans  &trans              &trans        &trans         &trans      &trans    &trans  &trans                          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp F13 F14>;
         };
 
         win_left {
@@ -271,6 +271,24 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LA(TAB) LA(LS(TAB))>;
+        };
+
+        NumberFunction_jp {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+            >;
+        };
+
+        win_jp_kigou {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+            >;
         };
     };
 };
