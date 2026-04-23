@@ -107,7 +107,7 @@ layers:
   - {t: J, h: RIGHT WIN}
   - {t: K, h: RIGHT SHIFT}
   - {t: L, h: RIGHT ALT}
-  - {t: Sft+7, h: ;}
+  - {t: '&', h: ':'}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -569,7 +569,7 @@ layers:
   - '7'
   - '8'
   - '9'
-  - +
+  - Sft+;
   - F6
   - F7
   - F8
@@ -580,7 +580,7 @@ layers:
   - '4'
   - '5'
   - '6'
-  - '*'
+  - 'Sft+:'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -588,7 +588,7 @@ layers:
   - F12
   - MUTE
   - {t: ▽, type: trans}
-  - '='
+  - Sft+-
   - '1'
   - '2'
   - '3'
@@ -603,6 +603,21 @@ layers:
   - {type: held}
   - .
   win_jp_kigou:
+  - '!'
+  - '['
+  - '#'
+  - $
+  - '%'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '='
+  - Sft+LCTRL
+  - 'Sft+:'
+  - '&mkp LCLK'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -610,23 +625,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Sft+@, h: +}
+  - /
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
