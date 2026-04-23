@@ -608,42 +608,42 @@ layers:
   - '#'
   - $
   - '%'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ESC
+  - HOME
+  - UP ARROW
+  - END
+  - PRINTSCREEN
+  - TAB
   - '='
-  - Sft+LCTRL
-  - 'Sft+:'
+  - ^
+  - Sft+;
   - '&mkp LCLK'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BACKSPACE
+  - LEFT
+  - DOWN ARROW
+  - RIGHT
+  - F2
+  - LSHIFT
   - {t: Sft+@, h: +}
   - /
+  - Sft+0
+  - Sft+Ctl+0
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - DELETE
+  - PAGE UP
+  - INS
+  - PAGE DOWN
+  - RIGHT ALT
+  - LCTRL
+  - LEFT WIN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ENTER
+  - LEFT ALT
   - {t: ▽, type: trans}
   windows_jp_kakko:
   - {t: ▽, type: trans}
@@ -660,7 +660,7 @@ layers:
   - '&cacco4JpHankaku'
   - '&cacco3JpHankaku'
   - '&cacco2JpHankaku'
-  - )
+  - '*'
   - {t: ▽, type: trans}
   - (
   - '&cacco2JpZenkaku'
