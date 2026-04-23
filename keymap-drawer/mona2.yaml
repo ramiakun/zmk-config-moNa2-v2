@@ -107,7 +107,7 @@ layers:
   - {t: J, h: RIGHT WIN}
   - {t: K, h: RIGHT SHIFT}
   - {t: L, h: RIGHT ALT}
-  - {t: Sft+7, h: (SEMICOLON)}
+  - {t: Sft+7, h: ;}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
