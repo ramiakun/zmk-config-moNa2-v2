@@ -155,7 +155,7 @@
         windows_jp {
             bindings = <
 &mt ESCAPE Q      &kp W           &kp E             &kp R           &kp T                                               &kp Y              &kp U            &kp I              &kp O            &kp P
-&mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 9 EQUAL       &mt LCTRL H        &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON LS(N7)
+&mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 9 EQUAL       &mt LCTRL H        &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt COLON AMPERSAND
 &mt LEFT_SHIFT Z  &kp X           &kp C             &kp V           &kp B             &to 1           &to 2             &kp N              &kp M            &kp COMMA          &kp DOT          &kp SLASH
 &kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT      &lt 8 MINUS     &lt 6 LANGUAGE_2  &lt 12 SPACE    &lt 11 BACKSPACE  &lt 13 LANGUAGE_1                                                       &kp RCTRL
             >;
@@ -275,10 +275,10 @@
 
         NumberFunction_jp {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5                         &kp MINUS  &kp N7        &kp N8        &kp N9        &kp PLUS
-&kp F6  &kp F7  &kp F8  &kp F9   &kp F10                &trans  &kp SLASH  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK
-&trans  &trans  &trans  &kp F11  &kp F12  &kp C_MUTE    &trans  &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
-&trans  &trans  &trans  &trans   &trans   &trans        &trans  &trans                                               &kp PERIOD
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5                         &kp MINUS      &kp N7        &kp N8        &kp N9        &kp RS(SEMICOLON)
+&kp F6  &kp F7  &kp F8  &kp F9   &kp F10                &trans  &kp SLASH      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp RS(COLON)
+&trans  &trans  &trans  &kp F11  &kp F12  &kp C_MUTE    &trans  &kp LS(MINUS)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
+&trans  &trans  &trans  &trans   &trans   &trans        &trans  &trans                                                   &kp PERIOD
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -286,10 +286,10 @@
 
         win_jp_kigou {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&kp EXCLAMATION  &kp LEFT_BRACKET      &kp HASH       &kp DOLLAR     &kp PERCENT                    &trans  &trans  &trans  &trans  &trans
+&trans           &kp EQUAL             &kp RS(LCTRL)  &kp RS(COLON)  &mkp LCLK              &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &mt PLUS RS(AT_SIGN)  &kp SLASH      &trans         &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans                &trans         &trans         &trans       &trans    &trans  &trans                          &trans
             >;
         };
     };
