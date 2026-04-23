@@ -152,59 +152,59 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_2 {
+        windows_jp {
             bindings = <
-&kp EXCLAMATION  &kp AT_SIGN  &kp POUND          &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp MINUS  &kp UNDERSCORE
-&kp GRAVE        &kp TILDE    &kp DOUBLE_QUOTES  &kp SQT     &trans                  &trans   &mkp MB3   &mkp MB1       &mkp MB2      &kp EQUAL  &kp PLUS
-&kp F1           &kp F2       &kp F3             &kp F4      &kp F5       &kp F11    &kp F12  &kp F6     &kp F7         &kp F8        &kp F9     &kp F10
-&trans           &trans       &trans             &trans      &trans       &trans     &trans   &trans                                             &trans
+&mt ESCAPE Q      &kp W           &kp E             &kp R           &kp T                                               &kp Y              &kp U            &kp I              &kp O            &kp P
+&mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 9 EQUAL       &mt LCTRL H        &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt (SEMICOLON) LS(N7)
+&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V           &kp B             &to 1           &to 2             &kp N              &kp M            &kp COMMA          &kp DOT          &kp SLASH
+&kp LCTRL         &kp LEFT_WIN    &kp LEFT_ALT      &lt 8 MINUS     &lt 6 LANGUAGE_2  &lt 12 SPACE    &lt 11 BACKSPACE  &lt 13 LANGUAGE_1                                                       &kp RCTRL
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_3 {
+        mac_onishi {
             bindings = <
-&trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                     &trans  &kp HOME        &kp UP_ARROW    &kp END          &trans
-&trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))            &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &kp LEFT_SHIFT      &kp LG(LS(LEFT_ARROW))  &kp LG(LS(RIGHT_ARROW))  &trans                   &trans    &trans  &trans  &kp DELETE      &kp PAGE_UP     &kp PAGE_DOWN    &trans
-&trans  &trans              &trans                  &trans                   &trans                   &trans    &trans  &trans                                                   &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans            &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                                                  &bt BT_CLR_ALL
+&mt CAPS Q        &kp L           &kp E             &mt PERIOD COMMA  &mt SEMICOLON SQT                                    &kp F             &kp R            &kp W              &kp Y            &kp P
+&mt TAB A         &mt LEFT_ALT I  &mt LEFT_SHIFT U  &mt LEFT_WIN O    &mt LCTRL MINUS                    &lt 9 EQUAL       &mt LCTRL K       &mt RIGHT_WIN T  &mt RIGHT_SHIFT N  &mt RIGHT_ALT S  &kp H
+&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V             &kp SLASH          &to 0           &to 1             &kp G             &kp D            &kp M              &kp J            &kp B
+&kp LEFT_WIN      &kp LEFT_ALT    &kp LCTRL         &lt 7 MINUS       &lt 5 LANGUAGE_2   &lt 12 SPACE    &lt 10 BACKSPACE  &lt 4 LANGUAGE_1                                                       &kp RIGHT_WIN
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        MOUSE {
+        Number_Function {
             bindings = <
-&trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans
-&trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans            &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
-&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans                                &trans
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5                         &kp MINUS  &kp N7        &kp N8        &kp N9        &kp PLUS
+&kp F6  &kp F7  &kp F8  &kp F9   &kp F10                &trans  &kp SLASH  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK
+&trans  &trans  &trans  &kp F11  &kp F12  &kp C_MUTE    &trans  &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
+&trans  &trans  &trans  &trans   &trans   &trans        &trans  &trans                                               &kp PERIOD
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
-        SCROLL {
+        mac_kigou {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&mt ESCAPE EXCLAMATION  &kp AT_SIGN         &kp HASH                  &kp DOLLAR          &kp PERCENT                              &kp ESCAPE     &kp LG(LEFT)      &kp UP_ARROW  &kp LG(RIGHT)  &kp LC(LS(LG(NUMBER_4)))
+&kp TAB                 &mt LEFT_ALT CARET  &mt LEFT_SHIFT AMPERSAND  &mt LCTRL ASTERISK  &mkp LCLK                    &trans      &kp BACKSPACE  &kp LEFT_ARROW    &kp DOWN      &kp RIGHT      &kp LC(U)
+&kp LSHIFT              &kp GRAVE           &kp SLASH                 &kp BACKSLASH       &kp SEMICOLON  &kp C_MUTE    &trans      &kp DELETE     &kp LG(UP_ARROW)  &kp INS       &kp LG(DOWN)   &kp RIGHT_ALT
+&trans                  &trans              &trans                    &trans              &trans         &trans        &kp RETURN  &kp RIGHT_ALT                                                 &kp LS(LG(NUMBER_3))
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp F14 F15>;
+        };
+
+        windows_kigou {
+            bindings = <
+&mt ESCAPE EXCLAMATION  &kp AT_SIGN         &kp HASH                  &kp DOLLAR          &kp PERCENT                              &kp ESCAPE     &kp HOME        &kp UP_ARROW  &kp END        &kp PRINTSCREEN
+&kp TAB                 &mt LEFT_ALT CARET  &mt LEFT_SHIFT AMPERSAND  &mt LCTRL ASTERISK  &mkp LCLK                    &trans      &kp BACKSPACE  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp F2
+&kp LSHIFT              &kp GRAVE           &kp SLASH                 &kp BACKSLASH       &kp SEMICOLON  &kp C_MUTE    &trans      &kp DELETE     &kp PAGE_UP     &kp INS       &kp PAGE_DOWN  &kp RIGHT_ALT
+&trans                  &trans              &trans                    &trans              &trans         &trans        &kp RETURN  &kp RIGHT_ALT                                               &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         layer_7 {
