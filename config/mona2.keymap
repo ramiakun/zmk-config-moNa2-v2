@@ -207,7 +207,73 @@
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
-        layer_7 {
+        mac_left {
+            bindings = <
+&trans  &kp LA(LEFT_ARROW)  &kp UP_ARROW  &kp LA(RIGHT)  &trans                        &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ARROW      &kp DOWN      &kp RIGHT      &trans                &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(UP_ARROW)    &trans        &kp LG(DOWN)   &kp C_MUTE  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans              &trans        &trans         &trans      &trans    &trans  &trans                          &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp F13 F14>;
+        };
+
+        win_left {
+            bindings = <
+&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &none                                &none   &none  &none  &none  &none
+&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END               &trans         &none   &none  &none  &none  &none
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &none           &kp LG(LS(RIGHT_ARROW))  &kp C_MUTE  &trans    &trans         &none   &none  &none  &none  &none
+&trans          &trans                  &trans          &trans                   &trans      &trans    &kp BACKSPACE  &trans                       &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
+        };
+
+        buletooth {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans            &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        mac_Mouse {
+            bindings = <
+&kp LG(LC(LA(M)))  &kp LG(LA(LC(LEFT)))  &kp LC(LG(UP_ARROW))  &kp LA(LC(LG(UP_ARROW)))  &kp LG(BACKSLASH)                    &trans  &kp LG(LEFT_BRACKET)  &trans    &kp LG(RIGHT_BRACKET)  &trans
+&kp LC(UP_ARROW)   &kp LG(LC(LEFT))      &kp LG(LC(DOWN))      &kp LG(LC(RIGHT))         &kp LG(RC(RS(D)))            &trans  &trans  &mkp MB1              &mkp MB3  &mkp MB2               &trans
+&kp LC(DOWN)       &kp LC(LG(LA(DOWN)))  &trans                &kp LC(LG(LA(RIGHT)))     &trans             &trans    &trans  &trans  &kp LC(LS(TAB))       &trans    &kp LC(TAB)            &trans
+&trans             &trans                &trans                &trans                    &trans             &trans    &trans  &trans                                                         &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp F14 F15>;
+        };
+
+        win_MOUSE {
+            bindings = <
+&kp LG(DOWN)  &kp LG(UP_ARROW)  &kp LC(W)         &kp LC(T)          &kp LS(LC(T))                        &none   &kp LA(LEFT)     &none     &kp LA(RIGHT)  &none
+&kp LG(LEFT)  &kp LG(RIGHT)     &kp LG(LS(LEFT))  &kp LG(LS(RIGHT))  &none                        &trans  &none   &mkp MB1         &mkp MB3  &mkp MB2       &none
+&none         &none             &none             &none              &none          &kp C_MUTE    &trans  &none   &kp LC(LS(TAB))  &none     &kp LC(TAB)    &none
+&trans        &trans            &trans            &trans             &trans         &trans        &trans  &trans                                            &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP>;
+        };
+
+        SCROLL {
+            bindings = <
+&trans          &trans          &trans          &kp LEFT_BRACE  &kp LEFT_BRACKET                                &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &trans   &trans   &trans
+&caccoZenkaku1  &caccoZenkaku4  &caccoZenkaku3  &caccoZenkaku2  &kp LEFT_PARENTHESIS            &trans          &kp RIGHT_PARENTHESIS  &cacco2          &cacco3  &cacco4  &cacco1
+&trans          &trans          &trans          &trans          &kp LESS_THAN         &trans    &trans          &kp GREATER_THAN       &trans           &trans   &trans   &trans
+&trans          &trans          &trans          &trans          &trans                &trans    &kp LANGUAGE_2  &kp LANGUAGE_1                                            &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp LA(TAB) LA(LS(TAB))>;
+        };
+
+        NumberFunction_jp {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
@@ -216,70 +282,7 @@
             >;
         };
 
-        layer_8 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
-            >;
-        };
-
-        layer_9 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
-            >;
-        };
-
-        layer_10 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
-            >;
-        };
-
-        layer_11 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
-            >;
-        };
-
-        layer_12 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
-            >;
-        };
-
-        layer_13 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
-            >;
-        };
-
-        layer_14 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
-            >;
-        };
-
-        layer_15 {
+        win_jp_kigou {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
