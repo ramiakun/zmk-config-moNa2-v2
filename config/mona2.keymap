@@ -292,5 +292,14 @@
 &trans           &trans                &trans         &trans         &trans       &trans    &trans  &trans                          &trans
             >;
         };
+
+        windows_jp_kakko {
+            bindings = <
+&trans  &trans  &trans  &kp RBRC  &kp RIGHT_BRACKET                        &kp NON_US_BACKSLASH  &kp LS(BACKSLASH)  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &kp RIGHT_PARENTHESIS            &trans  &kp LEFT_PARENTHESIS  &trans             &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &kp LESS_THAN          &trans    &trans  &kp GREATER_THAN      &trans             &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans                 &trans    &trans  &trans                                                   &trans
+            >;
+        };
     };
 };
