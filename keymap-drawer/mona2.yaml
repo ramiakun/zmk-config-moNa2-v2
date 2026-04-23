@@ -107,7 +107,7 @@ layers:
   - {t: J, h: RIGHT WIN}
   - {t: K, h: RIGHT SHIFT}
   - {t: L, h: RIGHT ALT}
-  - {t: '&', h: ':'}
+  - {t: '&', h: ;}
   - {t: Z, h: LEFT SHIFT}
   - X
   - C
@@ -580,7 +580,7 @@ layers:
   - '4'
   - '5'
   - '6'
-  - 'Sft+:'
+  - Sft+'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -616,7 +616,7 @@ layers:
   - TAB
   - '='
   - ^
-  - Sft+;
+  - Sft+'
   - '&mkp LCLK'
   - {t: ▽, type: trans}
   - BACKSPACE
@@ -625,10 +625,10 @@ layers:
   - RIGHT
   - F2
   - LSHIFT
-  - {t: Sft+@, h: +}
-  - /
-  - Sft+0
-  - Sft+Ctl+0
+  - '&jp_underbar'
+  - '&jp_pipe'
+  - '&jp_en'
+  - {t: '''', h: ;}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - DELETE
