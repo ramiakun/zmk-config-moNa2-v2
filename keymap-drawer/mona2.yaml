@@ -39,7 +39,7 @@ layers:
   - LCTRL
   - {t: '-', h: mac_left}
   - {t: LANGUAGE 2, h: mac_kigou}
-  - {t: SPACE, h: '12'}
+  - {t: SPACE, h: '12,15'}
   - {t: BACKSPACE, h: mac_Mouse}
   - {t: LANGUAGE 1, h: Number_Function}
   - RIGHT WIN
@@ -82,7 +82,7 @@ layers:
   - LEFT ALT
   - {t: '-', h: win_left}
   - {t: LANGUAGE 2, h: windows_kigou}
-  - {t: SPACE, h: '12'}
+  - {t: SPACE, h: '12,15'}
   - {t: BACKSPACE, h: win_MOUSE}
   - {t: LANGUAGE 1, h: Number_Function}
   - RCTRL
@@ -125,7 +125,7 @@ layers:
   - LEFT ALT
   - {t: '-', h: win_left}
   - {t: LANGUAGE 2, h: windows_kigou}
-  - {t: SPACE, h: '12'}
+  - {t: SPACE, h: '12,15'}
   - {t: BACKSPACE, h: win_MOUSE}
   - {t: LANGUAGE 1, h: NumberFunction_jp}
   - RCTRL
@@ -168,7 +168,7 @@ layers:
   - LCTRL
   - {t: '-', h: mac_left}
   - {t: LANGUAGE 2, h: mac_kigou}
-  - {t: SPACE, h: '12'}
+  - {t: SPACE, h: '12,15'}
   - {t: BACKSPACE, h: mac_Mouse}
   - {t: LANGUAGE 1, h: Number_Function}
   - RIGHT WIN
@@ -516,7 +516,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '12':
+  12,15:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
