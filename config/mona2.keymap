@@ -160,6 +160,7 @@
             #binding-cells = <0>;
             bindings = <&kp LANGUAGE_1 &kp A &kp N &kp TAB &kp ENTER &kp LANGUAGE_2>;
             label = "JP_UNDERBAR";
+            wait-ms = <5>;
         };
 
         jp_pipe: jp_pipe {
@@ -167,6 +168,7 @@
             #binding-cells = <0>;
             bindings = <&kp LANGUAGE_1 &kp P &kp A &kp I &kp TAB &kp ENTER &kp LANGUAGE_2>;
             label = "JP_PIPE";
+            wait-ms = <5>;
         };
 
         jp_en: jp_en {
@@ -174,6 +176,7 @@
             #binding-cells = <0>;
             bindings = <&kp LANG_HANGEUL &kp E &kp N &kp TAB &kp ENTER &kp LANGUAGE_2>;
             label = "JP_EN";
+            wait-ms = <5>;
         };
     };
 
@@ -353,7 +356,7 @@
         NumberFunction_jp {
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                         &kp MINUS      &kp N7        &kp N8        &kp N9        &kp RS(SEMICOLON)
-&kp F6  &kp F7  &kp F8  &kp F9   &kp F10                &trans  &kp SLASH      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp RS(COLON)
+&kp F6  &kp F7  &kp F8  &kp F9   &kp F10                &trans  &kp SLASH      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp RS(SINGLE_QUOTE)
 &trans  &trans  &trans  &kp F11  &kp F12  &kp C_MUTE    &trans  &kp LS(MINUS)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp N0
 &trans  &trans  &trans  &trans   &trans   &trans        &trans  &trans                                                   &kp PERIOD
             >;
@@ -363,10 +366,10 @@
 
         win_jp_kigou {
             bindings = <
-&kp EXCLAMATION  &kp LEFT_BRACKET  &kp HASH   &kp DOLLAR         &kp PERCENT                                      &kp ESC        &kp HOME     &kp UP_ARROW    &kp END        &kp PRINTSCREEN
-&kp TAB          &kp EQUAL         &kp CARET  &kp RS(SEMICOLON)  &mkp LCLK                             &trans     &kp BACKSPACE  &kp LEFT     &kp DOWN_ARROW  &kp RIGHT      &kp F2
-&kp LSHIFT       &jp_underbar      &jp_pipe   &jp_en             &mt SEMICOLON SINGLE_QUOTE  &trans    &trans     &kp DELETE     &kp PAGE_UP  &kp INS         &kp PAGE_DOWN  &kp RIGHT_ALT
-&kp LCTRL        &kp LEFT_WIN      &trans     &trans             &trans                      &trans    &kp ENTER  &kp LEFT_ALT                                               &trans
+&kp EXCLAMATION  &kp LEFT_BRACKET  &kp HASH   &kp DOLLAR            &kp PERCENT                                      &kp ESC        &kp HOME     &kp UP_ARROW    &kp END        &kp PRINTSCREEN
+&kp TAB          &kp EQUAL         &kp CARET  &kp RS(SINGLE_QUOTE)  &mkp LCLK                             &trans     &kp BACKSPACE  &kp LEFT     &kp DOWN_ARROW  &kp RIGHT      &kp F2
+&kp LSHIFT       &jp_underbar      &jp_pipe   &jp_en                &mt SEMICOLON SINGLE_QUOTE  &trans    &trans     &kp DELETE     &kp PAGE_UP  &kp INS         &kp PAGE_DOWN  &kp RIGHT_ALT
+&kp LCTRL        &kp LEFT_WIN      &trans     &trans                &trans                      &trans    &kp ENTER  &kp LEFT_ALT                                               &trans
             >;
         };
 
