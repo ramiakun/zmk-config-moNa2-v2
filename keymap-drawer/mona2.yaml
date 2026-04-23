@@ -124,8 +124,8 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - {t: '-', h: win_left}
-  - {t: LANGUAGE 2, h: windows_kigou}
-  - {t: SPACE, h: '12'}
+  - {t: LANGUAGE 2, h: win_jp_kigou}
+  - {t: SPACE, h: windows_jp_kakko}
   - {t: BACKSPACE, h: win_MOUSE}
   - {t: LANGUAGE 1, h: NumberFunction_jp}
   - RCTRL
@@ -640,7 +640,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -684,7 +684,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

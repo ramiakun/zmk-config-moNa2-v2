@@ -748,14 +748,14 @@ path.combo {
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-0.9em" style="font-size: 88%">LANGUAGE</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">2</tspan>
 </text>
-<a href="#windows_kigou">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">windows_ki…</tspan></text>
+<a href="#win_jp_kigou">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">win_jp_kig…</tspan></text>
 </a></g>
 <g transform="translate(308, 196)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
-<a href="#x_x">
-<text x="0" y="24" class="key hold layer-activator">12</text>
+<a href="#windows_jp_kakko">
+<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">windows_jp…</tspan></text>
 </a></g>
 <g transform="translate(420, 196)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -3121,9 +3121,8 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(252, 196)" class="key trans keypos-37">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(252, 196)" class="key held keypos-37">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(308, 196)" class="key trans keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -3310,9 +3309,8 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(308, 196)" class="key trans keypos-38">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(308, 196)" class="key held keypos-38">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(420, 196)" class="key trans keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
