@@ -98,6 +98,48 @@
             bindings = <&kp LANGUAGE_2 &kp LESS_THAN &kp GREATER_THAN &kp LEFT>;
             label = "CACCOZENKAKU4";
         };
+
+        cacco1JpHankaku: cacco1JpHankaku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp RIGHT_BRACE &kp LS(NON_US_BACKSLASH) &kp LEFT_ARROW>;
+            label = "CACCO1JPHANKAKU";
+        };
+
+        cacco2JpHankaku: cacco2JpHankaku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp ASTERISK &kp LEFT_PARENTHESIS &kp LEFT>;
+            label = "CACCO2JPHANKAKU";
+        };
+
+        cacco3JpHankaku: cacco3JpHankaku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp RIGHT_BRACKET &kp BACKSLASH &kp LEFT>;
+            label = "CACCO3JPHANKAKU";
+        };
+
+        cacco4JpHankaku: cacco4JpHankaku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LESS_THAN &kp GREATER_THAN &kp LEFT>;
+            label = "CACCO4JPHANKAKU";
+        };
+
+        cacco1JpZenkaku: cacco1JpZenkaku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp RIGHT_BRACE &kp LS(BACKSLASH) &kp ENTER &kp LEFT>;
+            label = "CACCO1JPZENKAKU";
+        };
+
+        cacco2JpZenkaku: cacco2JpZenkaku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp ASTERISK &kp LEFT_PARENTHESIS &kp ENTER &kp LEFT_ARROW>;
+            label = "CACCO2JPZENKAKU";
+        };
     };
 
     behaviors {
