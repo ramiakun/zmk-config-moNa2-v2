@@ -102,7 +102,7 @@
         cacco1JpHankaku: cacco1JpHankaku {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &kp RIGHT_BRACE &kp LS(NON_US_BACKSLASH) &kp LEFT_ARROW>;
+            bindings = <&kp LANGUAGE_2 &kp RIGHT_BRACE &kp LS(BACKSLASH) &kp LEFT_ARROW>;
             label = "CACCO1JPHANKAKU";
         };
 
@@ -342,19 +342,19 @@
 
         win_jp_kigou {
             bindings = <
-&kp EXCLAMATION  &kp LEFT_BRACKET      &kp HASH       &kp DOLLAR     &kp PERCENT                    &trans  &trans  &trans  &trans  &trans
-&trans           &kp EQUAL             &kp RS(LCTRL)  &kp RS(COLON)  &mkp LCLK              &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &mt PLUS RS(AT_SIGN)  &kp SLASH      &trans         &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans                &trans         &trans         &trans       &trans    &trans  &trans                          &trans
+&kp EXCLAMATION  &kp LEFT_BRACKET      &kp HASH   &kp DOLLAR         &kp PERCENT                          &kp ESC        &kp HOME     &kp UP_ARROW    &kp END        &kp PRINTSCREEN
+&kp TAB          &kp EQUAL             &kp CARET  &kp RS(SEMICOLON)  &mkp LCLK                 &trans     &kp BACKSPACE  &kp LEFT     &kp DOWN_ARROW  &kp RIGHT      &kp F2
+&kp LSHIFT       &mt PLUS RS(AT_SIGN)  &kp SLASH  &kp LS(N0)         &kp LS(LC(N0))  &trans    &trans     &kp DELETE     &kp PAGE_UP  &kp INS         &kp PAGE_DOWN  &kp RIGHT_ALT
+&kp LCTRL        &kp LEFT_WIN          &trans     &trans             &trans          &trans    &kp ENTER  &kp LEFT_ALT                                               &trans
             >;
         };
 
         windows_jp_kakko {
             bindings = <
-&trans            &trans            &trans            &kp RBRC          &kp RIGHT_BRACKET                        &kp NON_US_BACKSLASH  &kp LS(BACKSLASH)  &trans            &trans            &trans
-&cacco1JpHankaku  &cacco4JpHankaku  &cacco3JpHankaku  &cacco2JpHankaku  &kp RIGHT_PARENTHESIS            &trans  &kp LEFT_PARENTHESIS  &cacco2JpZenkaku   &cacco3JpZenkaku  &cacco4JpZenkaku  &cacco1JpZenkaku
-&trans            &trans            &trans            &trans            &kp LESS_THAN          &trans    &trans  &kp GREATER_THAN      &trans             &trans            &trans            &trans
-&trans            &trans            &trans            &trans            &trans                 &trans    &trans  &trans                                                                       &trans
+&trans            &trans            &trans            &kp RBRC          &kp RIGHT_BRACKET                    &kp BACKSLASH         &kp LS(BACKSLASH)  &trans            &trans            &trans
+&cacco1JpHankaku  &cacco4JpHankaku  &cacco3JpHankaku  &cacco2JpHankaku  &kp ASTERISK                 &trans  &kp LEFT_PARENTHESIS  &cacco2JpZenkaku   &cacco3JpZenkaku  &cacco4JpZenkaku  &cacco1JpZenkaku
+&trans            &trans            &trans            &trans            &kp LESS_THAN      &trans    &trans  &kp GREATER_THAN      &trans             &trans            &trans            &trans
+&trans            &trans            &trans            &trans            &trans             &trans    &trans  &trans                                                                       &trans
             >;
         };
     };
