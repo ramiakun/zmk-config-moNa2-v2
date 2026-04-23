@@ -8,7 +8,7 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 5
-#define SCROLL 6
+#define SCROLL 11
 
 &mt {
     flavor = "balanced";
@@ -25,7 +25,7 @@
         compatible = "zmk,combos";
 
         layer4_ESC {
-            bindings = <&lt 4 ESC>;
+            bindings = <&lt 5 ESC>;
             key-positions = <39 38>;
         };
 
@@ -39,8 +39,64 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        cacco1: cacco1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp LEFT_BRACE &kp RIGHT_BRACE &kp RET &kp LEFT_ARROW>;
+            label = "CACCO1";
+        };
+
+        cacco2: cacco2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp RETURN &kp LEFT>;
+            label = "CACCO2";
+        };
+
+        cacco3: cacco3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp RET &kp LEFT>;
+            label = "CACCO3";
+        };
+
+        cacco4: cacco4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp LESS_THAN &kp GREATER_THAN &kp RET &kp LEFT_ARROW>;
+            label = "CACCO4";
+        };
+
+        caccoZenkaku1: caccoZenkaku1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            label = "CACCOZENKAKU1";
+        };
+
+        caccoZenkaku2: caccoZenkaku2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp LEFT_ARROW>;
+            label = "CACCOZENKAKU2";
+        };
+
+        caccoZenkaku3: caccoZenkaku3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "CACCOZENKAKU3";
+        };
+
+        caccoZenkaku4: caccoZenkaku4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2 &kp LESS_THAN &kp GREATER_THAN &kp LEFT>;
+            label = "CACCOZENKAKU4";
         };
     };
 
@@ -74,12 +130,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default_layout {
             bindings = <
-&mt CAPS Q        &kp W         &kp E    &kp R          &kp T                                                          &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D    &kp F          &kp G                                  &kp F13                 &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C    &kp V          &kp B        &kp F14                   &kp F15                 &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp F16  &kp BACKSPACE  &lt 2 ENTER  &lt_to_layer_0 3 LANG2    &lt_to_layer_0 3 LANG1  &lt 1 SPACE                             &kp LEFT_ALT
+&mt CAPSLOCK Q    &kp W           &kp E             &kp R           &kp T                                               &kp Y             &kp U            &kp I              &kp O            &kp P
+&mt TAB A         &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LEFT_WIN F  &mt LCTRL G                       &lt 9 EQUAL       &mt LCTRL H       &mt RIGHT_WIN J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L  &mt SEMICOLON SQT
+&mt LEFT_SHIFT Z  &kp X           &kp C             &kp V           &kp B             &to 3           &to 1             &kp N             &kp M            &kp COMMA          &kp DOT          &kp SLASH
+&kp LEFT_WIN      &kp LEFT_ALT    &kp LCTRL         &lt 7 MINUS     &lt 5 LANGUAGE_2  &lt 12 SPACE    &lt 10 BACKSPACE  &lt 4 LANGUAGE_1                                                       &kp RIGHT_WIN
             >;
 
             sensor-bindings = <&scroll_up_down>;
