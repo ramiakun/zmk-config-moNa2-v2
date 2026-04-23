@@ -140,6 +140,20 @@
             bindings = <&kp LANGUAGE_1 &kp ASTERISK &kp LEFT_PARENTHESIS &kp ENTER &kp LEFT_ARROW>;
             label = "CACCO2JPZENKAKU";
         };
+
+        cacco3JpZenkaku: cacco3JpZenkaku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp RIGHT_BRACKET &kp BACKSLASH &kp ENTER &kp LEFT>;
+            label = "CACCO3JPZENKAKU";
+        };
+
+        cacco4JpZenkaku: cacco4JpZenkaku {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_1 &kp LESS_THAN &kp GREATER_THAN &kp ENTER &kp LEFT>;
+            label = "CACCO4JPZENKAKU";
+        };
     };
 
     behaviors {
