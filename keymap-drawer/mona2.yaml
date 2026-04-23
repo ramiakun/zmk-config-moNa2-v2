@@ -656,17 +656,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&cacco1JpHankaku'
+  - '&cacco4JpHankaku'
+  - '&cacco3JpHankaku'
+  - '&cacco2JpHankaku'
   - )
   - {t: ▽, type: trans}
   - (
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&cacco2JpZenkaku'
+  - '&cacco3JpZenkaku'
+  - '&cacco4JpZenkaku'
+  - '&cacco1JpZenkaku'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
