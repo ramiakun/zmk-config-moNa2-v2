@@ -16,7 +16,7 @@ layers:
   - {t: D, h: LEFT SHIFT}
   - {t: F, h: LEFT WIN}
   - {t: G, h: LCTRL}
-  - {t: '=', h: '9'}
+  - {t: '=', h: buletooth}
   - {t: H, h: LCTRL}
   - {t: J, h: RIGHT WIN}
   - {t: K, h: RIGHT SHIFT}
@@ -37,10 +37,10 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - LCTRL
-  - {t: '-', h: '7'}
+  - {t: '-', h: mac_left}
   - {t: LANGUAGE 2, h: mac_kigou}
-  - {t: SPACE, h: '12'}
-  - {t: BACKSPACE, h: '10'}
+  - {t: SPACE, h: '11'}
+  - {t: BACKSPACE, h: mac_Mouse}
   - {t: LANGUAGE 1, h: Number_Function}
   - RIGHT WIN
   windows:
@@ -59,7 +59,7 @@ layers:
   - {t: D, h: LEFT SHIFT}
   - {t: F, h: LEFT WIN}
   - {t: G, h: LCTRL}
-  - {t: '=', h: '9'}
+  - {t: '=', h: buletooth}
   - {t: H, h: LCTRL}
   - {t: J, h: RIGHT WIN}
   - {t: K, h: RIGHT SHIFT}
@@ -80,10 +80,10 @@ layers:
   - LCTRL
   - LEFT WIN
   - LEFT ALT
-  - {t: '-', h: '8'}
+  - {t: '-', h: win_left}
   - {t: LANGUAGE 2, h: windows_kigou}
-  - {t: SPACE, h: '12'}
-  - {t: BACKSPACE, h: '11'}
+  - {t: SPACE, h: '11'}
+  - {t: BACKSPACE, h: win_MOUSE}
   - {t: LANGUAGE 1, h: Number_Function}
   - RCTRL
   windows_jp:
@@ -102,7 +102,7 @@ layers:
   - {t: D, h: LEFT SHIFT}
   - {t: F, h: LEFT WIN}
   - {t: G, h: LCTRL}
-  - {t: '=', h: '9'}
+  - {t: '=', h: buletooth}
   - {t: H, h: LCTRL}
   - {t: J, h: RIGHT WIN}
   - {t: K, h: RIGHT SHIFT}
@@ -123,11 +123,11 @@ layers:
   - LCTRL
   - LEFT WIN
   - LEFT ALT
-  - {t: '-', h: '8'}
+  - {t: '-', h: win_left}
   - {t: LANGUAGE 2, h: windows_kigou}
-  - {t: SPACE, h: '12'}
-  - {t: BACKSPACE, h: '11'}
-  - {t: LANGUAGE 1, h: '13'}
+  - {t: SPACE, h: '11'}
+  - {t: BACKSPACE, h: win_MOUSE}
+  - {t: LANGUAGE 1, h: NumberFunction_jp}
   - RCTRL
   mac_onishi:
   - {t: Q, h: CAPS}
@@ -145,7 +145,7 @@ layers:
   - {t: U, h: LEFT SHIFT}
   - {t: O, h: LEFT WIN}
   - {t: '-', h: LCTRL}
-  - {t: '=', h: '9'}
+  - {t: '=', h: buletooth}
   - {t: K, h: LCTRL}
   - {t: T, h: RIGHT WIN}
   - {t: N, h: RIGHT SHIFT}
@@ -166,10 +166,10 @@ layers:
   - LEFT WIN
   - LEFT ALT
   - LCTRL
-  - {t: '-', h: '7'}
+  - {t: '-', h: mac_left}
   - {t: LANGUAGE 2, h: mac_kigou}
-  - {t: SPACE, h: '12'}
-  - {t: BACKSPACE, h: '10'}
+  - {t: SPACE, h: '11'}
+  - {t: BACKSPACE, h: mac_Mouse}
   - {t: LANGUAGE 1, h: Number_Function}
   - RIGHT WIN
   Number_Function:
@@ -301,7 +301,21 @@ layers:
   - RETURN
   - RIGHT ALT
   - {t: ▽, type: trans}
-  '7':
+  mac_left:
+  - {t: ▽, type: trans}
+  - Alt+LEFT ARROW
+  - UP ARROW
+  - Alt+RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN
+  - RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -310,24 +324,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Gui+UP ARROW
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+DOWN
+  - MUTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -344,38 +344,60 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '8':
+  win_left:
+  - ESCAPE
+  - Ctl+Sft+TAB
+  - UP ARROW
+  - Ctl+TAB
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - HOME
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - END
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LEFT SHIFT
+  - Gui+Sft+LEFT ARROW
+  - ''
+  - Gui+Sft+RIGHT ARROW
+  - MUTE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BACKSPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  buletooth:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -387,7 +409,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '9':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&bootloader'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -396,6 +429,40 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - BT CLR ALL
+  mac_Mouse:
+  - Gui+Ctl+Alt+M
+  - Gui+Alt+Ctl+LEFT
+  - Ctl+Gui+UP ARROW
+  - Alt+Ctl+Gui+UP ARROW
+  - Gui+\
+  - {t: ▽, type: trans}
+  - Gui+[
+  - {t: ▽, type: trans}
+  - Gui+]
+  - {t: ▽, type: trans}
+  - Ctl+UP ARROW
+  - Gui+Ctl+LEFT
+  - Gui+Ctl+DOWN
+  - Gui+Ctl+RIGHT
+  - Gui+Ctl+Sft+D
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB2'
+  - {t: ▽, type: trans}
+  - Ctl+DOWN
+  - Ctl+Gui+Alt+DOWN
+  - {t: ▽, type: trans}
+  - Ctl+Gui+Alt+RIGHT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+Sft+TAB
+  - {t: ▽, type: trans}
+  - Ctl+TAB
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -406,64 +473,40 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  win_MOUSE:
+  - Gui+DOWN
+  - Gui+UP ARROW
+  - Ctl+W
+  - Ctl+T
+  - Sft+Ctl+T
+  - ''
+  - Alt+LEFT
+  - ''
+  - Alt+RIGHT
+  - ''
+  - Gui+LEFT
+  - Gui+RIGHT
+  - Gui+Sft+LEFT
+  - Gui+Sft+RIGHT
+  - ''
   - {t: ▽, type: trans}
+  - ''
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB2'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - MUTE
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '10':
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - Ctl+Sft+TAB
+  - ''
+  - Ctl+TAB
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -477,33 +520,32 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '{'
+  - '['
+  - ']'
+  - '}'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '&caccoZenkaku1'
+  - '&caccoZenkaku4'
+  - '&caccoZenkaku3'
+  - '&caccoZenkaku2'
+  - (
+  - {t: ▽, type: trans}
+  - )
+  - '&cacco2'
+  - '&cacco3'
+  - '&cacco4'
+  - '&cacco1'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - <
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '>'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -514,52 +556,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - LANGUAGE 2
+  - LANGUAGE 1
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '12':
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '13':
+  NumberFunction_jp:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -602,50 +602,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  '14':
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '15':
+  win_jp_kigou:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
