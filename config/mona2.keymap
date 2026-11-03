@@ -187,11 +187,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LANG_HANGEUL &kp L &kp U &kp A &kp ENTER>,
-                <&macro_press>,
+                <&kp LANG_HANGEUL &kp L &kp U &kp A>,
+                <&macro_wait_time 1>,
                 <&kp TAB>,
-                <&macro_press>,
-                <&kp LANGUAGE_2 &kp>;
+                <&macro_wait_time 1>,
+                <&kp ENTER &kp LANGUAGE_2>;
 
             label = "JP_EN";
             wait-ms = <5>;
