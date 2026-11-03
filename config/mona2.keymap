@@ -158,7 +158,13 @@
         jp_underbar: jp_underbar {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &kp A &kp N &kp TAB &kp ENTER &kp LANGUAGE_2>;
+            bindings =
+                <&kp LANGUAGE_1 &kp L &kp I &kp A &kp ENTER>,
+                <&macro_wait_time 1>,
+                <&kp TAB>,
+                <&macro_wait_time 1>,
+                <&kp ENTER &kp LANGUAGE_2>;
+
             label = "JP_UNDERBAR";
             wait-ms = <5>;
         };
@@ -166,7 +172,13 @@
         jp_pipe: jp_pipe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_1 &kp P &kp A &kp I &kp TAB &kp ENTER &kp LANGUAGE_2>;
+            bindings =
+                <&kp LANGUAGE_1 &kp L &kp A &kp I>,
+                <&macro_wait_time 1>,
+                <&kp TAB>,
+                <&macro_wait_time 1>,
+                <&kp ENTER &kp LANGUAGE_2>;
+
             label = "JP_PIPE";
             wait-ms = <5>;
         };
@@ -174,7 +186,13 @@
         jp_en: jp_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG_HANGEUL &kp E &kp N &kp TAB &kp ENTER &kp LANGUAGE_2>;
+            bindings =
+                <&kp LANG_HANGEUL &kp L &kp U &kp A &kp ENTER>,
+                <&macro_press>,
+                <&kp TAB>,
+                <&macro_press>,
+                <&kp LANGUAGE_2 &kp>;
+
             label = "JP_EN";
             wait-ms = <5>;
         };
